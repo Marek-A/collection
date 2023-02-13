@@ -9,7 +9,7 @@ body {
 
 .body-container {
     background-color: #151515;
-    background-image: url("/src/assets/img/hello.png");
+    /* background-image: url("/src/assets/img/hello.png"); */
     background-position-x: 5vw;
     background-position-y: 50vh;
     background-repeat: no-repeat;
@@ -32,8 +32,24 @@ body {
 
     .myhomepage,
     .myabout,
-    .myportfolio,
     .mycontact {
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .mycontact {
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 30%;
+        margin-bottom: 50px;
+    }
+
+
+    .myportfolio {
         height: auto;
         margin-left: 5%;
         margin-right: 5%;
@@ -84,8 +100,8 @@ body {
 
 #lang,
 #logo {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 
 #lang:hover,
@@ -112,8 +128,11 @@ body {
 
     #lang,
     #logo {
+        display: flex;
+        justify-content: center;
         height: 30px;
         width: 30px;
+
     }
 }
 
@@ -159,5 +178,67 @@ body {
 
     #scroll-up-button::before {
         font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navlink {
+        display: flex;
+    }
+
+    #lang {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 20px 10px;
+
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        padding-top: 80px;
+        transition: all 0.5s ease-out;
+        transform: translateX(-100%);
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 20px 0;
+        font-size: 20px;
+        text-align: center;
     }
 }

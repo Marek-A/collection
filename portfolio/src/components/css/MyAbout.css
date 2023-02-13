@@ -61,3 +61,18 @@
         font-size: 30px;
     }
 }
+
+@media only screen and (min-width: 767px) and (min-width: 1324px) {
+
+    .about-text {
+        width: 20vw;
+        height: 20vh;
+        width: 30%;
+
+    }
+
+    .myabout {
+        font-size: 10px;
+        margin: auto;
+    }
+}

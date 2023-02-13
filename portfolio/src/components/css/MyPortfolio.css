@@ -1,8 +1,4 @@
 /* MyPortfolio.css */
-.portfolio-item {
-    max-width: 90%;
-    margin: 20px auto;
-}
 
 .myportfolio {
     color: rgb(255, 255, 255);
@@ -15,25 +11,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 100%;
 }
 
 .portfolio-item {
     width: 530px;
     height: 350px;
-    margin: 40px;
+    margin: 40px auto;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
-}
-
-@media only screen and (max-width: 767px) {
-    .portfolio-item {
-        width: 90%;
-        height: auto;
-        margin: 20px;
-    }
 }
 
 .portfolio-item:hover {
@@ -69,4 +58,70 @@
     height: 100%;
     width: 100%;
     background-color: rgb(26, 26, 26);
+}
+
+@media only screen and (max-width: 1535px) {
+    .portfolio-grid {
+        min-height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .portfolio-item {
+        width: 90%;
+        height: auto;
+        min-height: 300px;
+    }
+
+    .myportfolio {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .portfolio-item {
+        width: 90%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .myportfolio {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .portfolio-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .myportfolio {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    .portfolio-item {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1324px) {
+    .portfolio-grid {
+        width: 50%;
+        max-height: auto;
+        margin: auto;
+    }
+
+    .portfolio-item {
+        width: 20vw;
+        height: 20vh;
+        margin: 20px 0;
+    }
+
+    .myportfolio {
+        font-size: 28px;
+        margin: auto;
+    }
 }

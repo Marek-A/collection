@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
@@ -19,6 +20,9 @@ function App() {
   const MyPortfolioRef = useRef(null);
   const MyContactRef = useRef(null);
   const { t, i18n } = useTranslation();
+
+  const [showNavbar, setShowNavbar] = useState(true);
+  const toggleNavbar = () => setShowNavbar(!showNavbar);
 
   const scrollToSectionMyAbout = () =>
     MyAboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -58,6 +62,7 @@ function App() {
           <Navbar.Brand as={Link} to="/">
             {" "}
             <img
+              onClick={toggleNavbar}
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -66,36 +71,39 @@ function App() {
               alt=""
             />
           </Navbar.Brand>
-          <Nav>
-            <Nav id="navlink" onClick={topFunction}>
-              {t("HOME")}
+          {showNavbar && (
+            <Nav>
+              <Nav id="navlink" onClick={topFunction}>
+                {t("HOME")}
+              </Nav>
+              <Nav id="navlink" onClick={scrollToSectionMyAbout}>
+                {t("ABOUT")}
+              </Nav>
+              <Nav id="navlink" onClick={scrollToSectionMyPortfol}>
+                {t("PORTFOLIO")}
+              </Nav>
+              <Nav id="navlink" onClick={scrollToSectionMyContact}>
+                {t("CONTACT")}
+              </Nav>
+              <Nav>
+                <img
+                  id="lang"
+                  onClick={() => changeLang("en")}
+                  src="/english.png"
+                  alt="ENG"
+                />
+                <img
+                  id="lang"
+                  onClick={() => changeLang("ee")}
+                  src="/estonia.png"
+                  alt="EE"
+                />
+              </Nav>
             </Nav>
-            <Nav id="navlink" onClick={scrollToSectionMyAbout}>
-              {t("ABOUT")}
-            </Nav>
-            <Nav id="navlink" onClick={scrollToSectionMyPortfol}>
-              {t("PORTFOLIO")}
-            </Nav>
-            <Nav id="navlink" onClick={scrollToSectionMyContact}>
-              {t("CONTACT")}
-            </Nav>
-          </Nav>
-          <Nav>
-            <img
-              id="lang"
-              onClick={() => changeLang("en")}
-              src="/english.png"
-              alt="ENG"
-            />
-            <img
-              id="lang"
-              onClick={() => changeLang("ee")}
-              src="/estonia.png"
-              alt="EE"
-            />
-          </Nav>
+          )}
         </Container>
       </Navbar>
+
       <button
         onClick={topFunction}
         id="scroll-up-button"

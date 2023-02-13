@@ -1,11 +1,4 @@
 /* Contact */
-
-@media (max-width: 767px) {
-    .mycontact {
-        padding: 20px 0;
-    }
-}
-
 .mycontact {
     padding: 30px 0;
     border: rgba(203, 15, 15, 0) solid 1px;
@@ -99,6 +92,12 @@
 }
 
 /* Media Queries */
+@media (max-width: 767px) {
+    .mycontact {
+        padding: 20px 0;
+    }
+}
+
 @media (max-width: 991px) {
     .form-container {
         flex-direction: column;
