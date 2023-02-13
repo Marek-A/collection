@@ -1,0 +1,13 @@
+-- TO DO --
+
+- #PORTFOLIO PAGE TO DO:
+Scroll animation that text pops
+Github link fixes
+Skills with small logos etc.
+Resumee
+
+- #TEXT:
+This React webstore for Military gear was built during a comprehensive developer course.
+The process started with a deep dive into the world of e-commerce and React.
+The core of the webstore was built using React, a powerful JavaScript library for building user interfaces, and integrated with a robust e-commerce platform for a seamless shopping experience.
+The end result is a fully functional online store, ready to serve the needs of military gear enthusiasts everywhere.

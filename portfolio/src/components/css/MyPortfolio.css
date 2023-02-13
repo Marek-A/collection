@@ -1,4 +1,8 @@
 /* MyPortfolio.css */
+.portfolio-item {
+    max-width: 90%;
+    margin: 20px auto;
+}
 
 .myportfolio {
     color: rgb(255, 255, 255);
