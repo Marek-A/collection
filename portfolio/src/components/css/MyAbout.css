@@ -1,0 +1,63 @@
+/* About */
+
+.myabout {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 0;
+    text-align: center;
+    padding: 30px 0;
+    color: aliceblue;
+}
+
+.about-section {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.about-text {
+    color: rgba(240, 248, 255, 0.837);
+    text-align: left;
+    font-size: 30px;
+    width: 50%;
+}
+
+.about-text h4 {
+    color: rgb(42, 165, 165);
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+@media (max-width: 767px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text h4 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-style: 'Poppins', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000bb;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #169bd4;
+}
+
+
+.Toastify__toast--warning {
+  background: #FFE8BC !important;
+}
+
+.Toastify__toast--error {
+  background: #ff0004 !important;
+}
+
+.toastBody {
+  color: #00c8ff;
+  background-color: #ffffff00 !important;
+  font-size: 0.875rem !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+.toastProgress {
+  background: #12a8d2 !important;
+}

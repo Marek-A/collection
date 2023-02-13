@@ -1,0 +1,163 @@
+/* Styler for body elements and main containers*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #151515;
+}
+
+.body-container {
+    background-color: #151515;
+    background-image: url("/src/assets/img/hello.png");
+    background-position-x: 5vw;
+    background-position-y: 50vh;
+    background-repeat: no-repeat;
+}
+
+
+.myhomepage,
+.myabout,
+.myportfolio,
+.mycontact {
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 767px) {
+
+    .myhomepage,
+    .myabout,
+    .myportfolio,
+    .mycontact {
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 750px 0px rgba(62, 121, 117, 0.579);
+    z-index: 1;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navlink {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: larger;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+#navlink:hover {
+    color: #a5e9eb;
+    cursor: pointer;
+}
+
+#navlink:active {
+    font-weight: 900;
+    color: #71b4d0;
+    cursor: pointer;
+}
+
+#lang,
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+#lang:hover,
+#logo:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+#lang:hover {
+    border: 1px solid rgba(43, 145, 182, 0);
+}
+
+#logo:hover {
+    border: 1px solid rgba(232, 232, 232, 0);
+}
+
+@media (max-width: 767px) {
+    #navlink {
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #lang,
+    #logo {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+#scroll-up-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #7ff7f7c6;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    border: none;
+    background-color: #15151500;
+    right: 20px;
+    z-index: 99;
+    width: 70px;
+    height: 70px;
+    line-height: 40px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#scroll-up-button::before {
+    content: "▲";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#scroll-up-button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    #scroll-up-button {
+        bottom: 3%;
+        right: 50%;
+        width: 36px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #scroll-up-button::before {
+        font-size: 50px;
+    }
+}

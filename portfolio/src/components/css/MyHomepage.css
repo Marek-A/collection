@@ -1,0 +1,63 @@
+/* Homepage */
+
+.copyright {
+    border: rgba(203, 15, 15, 0) solid 1px;
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(240, 248, 255);
+}
+
+.myhomepage {
+    border: rgba(203, 15, 15, 0) solid 1px;
+    text-align: center;
+    padding: 30px 0;
+    color: aliceblue;
+}
+
+.my-name {
+    font-size: 132px;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.welcome-message {
+    font-size: 32px;
+    font-variant: small-caps;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.introduction {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .my-name {
+        font-size: 72px;
+    }
+
+    .welcome-message {
+        font-size: 28px;
+    }
+
+    .introduction {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .my-name {
+        font-size: 52px;
+    }
+
+    .welcome-message {
+        font-size: 24px;
+    }
+
+    .introduction {
+        font-size: 14px;
+    }
+}
