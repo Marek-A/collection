@@ -1,0 +1,145 @@
+/* ----- NAVIGATION BAR ----- */
+.navigationbar {
+    background-color: #00000036;
+    padding: 10px;
+    box-shadow: 0px 20px 100px rgba(31, 122, 132, 0.59);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navigationbar-content-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigationbar-buttons {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: larger;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.navigationbar-buttons:hover {
+    color: #a5e9eb;
+    cursor: pointer;
+}
+
+.navigationbar-buttons:active {
+    font-weight: 900;
+    color: #71b4d0;
+    cursor: pointer;
+}
+
+.navigationbar-logo {
+    height: 10px;
+    width: 10px;
+}
+
+.navigationbar-language-button {
+    height: 30px;
+    width: 30px;
+}
+
+.navigationbar-language-button:hover,
+.navigationbar-logo:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.navigationbar-language-button:hover {
+    border: 1px solid rgba(43, 145, 182, 0);
+}
+
+.navigationbar-logo:hover {
+    border: 1px solid rgba(232, 232, 232, 0);
+}
+
+/* ----- HAMBURGER ----- */
+#toggle-icon {
+    background-color: #368292;
+}
+
+#basic-navbar-nav {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #232323;
+    border: #00ddff30 solid 1px;
+    border-radius: 10px;
+}
+
+.hamburger-navigationbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 0px 20px 100px rgba(31, 122, 132, 0.59);
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+}
+
+
+.hamburger-navigationbar .navbar-nav .nav-link {
+    padding: 10px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hamburger-navigationbar .navbar-nav .nav-link:hover {
+    color: #3f3f3f;
+}
+
+.hamburger-navigationbar .navbar-nav .active {
+    color: #3f3f3f;
+    border-bottom: 2px solid #3f3f3f;
+}
+
+.hamburger-navigationbar .nav-link {
+    margin-right: 10px;
+}
+
+.hamburger-navigationbar .navbar-nav:last-child {
+    margin-left: auto;
+}
+
+.hamburger-navigationbar .navigationbar-language-button {
+    position: abso;
+    margin-left: 90%;
+
+    cursor: pointer;
+}
+
+
+.hamburger-navigationbar-buttons {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: larger;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hamburger-navigationbar-buttons:hover {
+    color: #a5e9eb;
+    cursor: pointer;
+}
+
+.hamburger-navigationbar-buttons:active {
+    font-weight: 900;
+    color: #71b4d0;
+    cursor: pointer;
+}

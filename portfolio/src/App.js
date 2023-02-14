@@ -1,5 +1,7 @@
 import "./App.css";
 import "./components/css/Styler.css";
+import "./components/css/NavigationBar.css";
+
 import MyHomepage from "./pages/MyHomepage";
 import MyAbout from "./pages/MyAbout";
 import MyPortfolio from "./pages/MyPortfolio";
@@ -9,9 +11,10 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function App() {
@@ -20,9 +23,9 @@ function App() {
   const MyPortfolioRef = useRef(null);
   const MyContactRef = useRef(null);
   const { t, i18n } = useTranslation();
-
-  const [showNavbar, setShowNavbar] = useState(true);
-  const toggleNavbar = () => setShowNavbar(!showNavbar);
+  const isMobileOrTablet = useMediaQuery({ maxWidth: 991 });
+  const [expanded, setExpanded] = useState(false);
+  const handleClick = () => setExpanded(expanded ? false : "expanded");
 
   const scrollToSectionMyAbout = () =>
     MyAboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -36,7 +39,7 @@ function App() {
     localStorage.setItem("language", newLang);
   };
 
-  let scrollbutton = document.getElementById("scroll-up-button");
+  let scrollbutton = document.getElementById("scroll-to-top-button");
   window.onscroll = function () {
     scrollFunction();
   };
@@ -57,58 +60,132 @@ function App() {
 
   return (
     <div className="body-container">
-      <Navbar expand="lg" className="sticky-top">
-        <Container id="container">
-          <Navbar.Brand as={Link} to="/">
-            {" "}
-            <img
-              onClick={toggleNavbar}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              id="logo"
-              src="logo.png"
-              alt=""
+      {isMobileOrTablet && (
+        <Navbar
+          className="hamburger-navigationbar"
+          expand="lg"
+          expanded={expanded}
+        >
+          <Container>
+            <Navbar.Brand id="logo" as={Link} to="/">
+              <img src="logo.png" alt="" width="45" height="45" />
+            </Navbar.Brand>
+            <Navbar.Toggle
+              id="toggle-icon"
+              onClick={handleClick}
+              aria-controls="basic-navbar-nav"
             />
-          </Navbar.Brand>
-          {showNavbar && (
-            <Nav>
-              <Nav id="navlink" onClick={topFunction}>
+
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav
+                className="hamburger-navigationbar-buttons"
+                onClick={topFunction}
+              >
                 {t("HOME")}
               </Nav>
-              <Nav id="navlink" onClick={scrollToSectionMyAbout}>
+              <br />
+              <Nav
+                className="hamburger-navigationbar-buttons"
+                onClick={scrollToSectionMyAbout}
+              >
                 {t("ABOUT")}
               </Nav>
-              <Nav id="navlink" onClick={scrollToSectionMyPortfol}>
+              <br />
+              <Nav
+                className="hamburger-navigationbar-buttons"
+                onClick={scrollToSectionMyPortfol}
+              >
                 {t("PORTFOLIO")}
               </Nav>
-              <Nav id="navlink" onClick={scrollToSectionMyContact}>
+              <br />
+              <Nav
+                className="hamburger-navigationbar-buttons"
+                onClick={scrollToSectionMyContact}
+              >
                 {t("CONTACT")}
               </Nav>
               <Nav>
                 <img
-                  id="lang"
+                  className="navigationbar-language-button"
+                  onClick={() => changeLang("en")}
+                  src="/english.png"
+                  alt="ENG"
+                />
+              </Nav>
+              <Nav>
+                <img
+                  className="navigationbar-language-button"
+                  onClick={() => changeLang("ee")}
+                  src="/estonia.png"
+                  alt="EE"
+                />
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      )}
+      {!isMobileOrTablet && (
+        <Navbar className="navigationbar" expand="lg">
+          <Container className="navigationbar-content-container">
+            <Navbar.Brand
+              onClick={topFunction}
+              width="100"
+              height="100"
+              className="d-inline-block align-top"
+              id="logo"
+              src="logo.png"
+              alt=""
+            >
+              {" "}
+              <img width="30" height="30" src="logo.png" alt="" />
+            </Navbar.Brand>
+            <Nav>
+              <Nav className="navigationbar-buttons" onClick={topFunction}>
+                {t("HOME")}
+              </Nav>
+              <Nav
+                className="navigationbar-buttons"
+                onClick={scrollToSectionMyAbout}
+              >
+                {t("ABOUT")}
+              </Nav>
+              <Nav
+                className="navigationbar-buttons"
+                onClick={scrollToSectionMyPortfol}
+              >
+                {t("PORTFOLIO")}
+              </Nav>
+              <Nav
+                className="navigationbar-buttons"
+                onClick={scrollToSectionMyContact}
+              >
+                {t("CONTACT")}
+              </Nav>
+              <Nav>
+                <img
+                  className="navigationbar-language-button"
                   onClick={() => changeLang("en")}
                   src="/english.png"
                   alt="ENG"
                 />
                 <img
-                  id="lang"
+                  className="navigationbar-language-button"
                   onClick={() => changeLang("ee")}
                   src="/estonia.png"
                   alt="EE"
                 />
               </Nav>
             </Nav>
-          )}
-        </Container>
-      </Navbar>
+          </Container>
+        </Navbar>
+      )}
 
       <button
         onClick={topFunction}
-        id="scroll-up-button"
+        id="scroll-to-top-button"
         title="Go to top"
       ></button>
+
       <MyHomepage r1={MyHomepageRef} />
       <MyAbout r1={MyAboutRef} />
       <MyPortfolio r1={MyPortfolioRef} />

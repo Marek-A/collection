@@ -9,8 +9,7 @@ function MyHomepage({ r1 }) {
 
     return (
         <div ref={r1} className="myhomepage">
-            <br />
-            <br />
+
             <p className="my-name">
                 Marek Angelštok
             </p>

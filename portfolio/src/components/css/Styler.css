@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .myhomepage,
 .myabout,
 .myportfolio,
@@ -28,6 +27,41 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* ----- SCROLL TO TOP BUTTON ----- */
+
+#scroll-to-top-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #7ff7f7c6;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    border: none;
+    background-color: #15151500;
+    right: 20px;
+    z-index: 99;
+    width: 70px;
+    height: 70px;
+    line-height: 40px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#scroll-to-top-button::before {
+    content: "▲";
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#scroll-to-top-button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* ----- MEDIA QUERYS----- */
+
+/* ----- PAGES----- */
 @media (max-width: 767px) {
 
     .myhomepage,
@@ -59,113 +93,7 @@ body {
 }
 
 
-
-.sticky-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(5px);
-    box-shadow: 10px 10px 750px 0px rgba(62, 121, 117, 0.579);
-    z-index: 1;
-}
-
-#container {
-    display: flex;
-    justify-content: space-around;
-}
-
-#navlink {
-    display: inline-block;
-    width: 250px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-size: larger;
-    color: #fff;
-    text-align: left;
-    cursor: pointer;
-}
-
-#navlink:hover {
-    color: #a5e9eb;
-    cursor: pointer;
-}
-
-#navlink:active {
-    font-weight: 900;
-    color: #71b4d0;
-    cursor: pointer;
-}
-
-#lang,
-#logo {
-    height: 30px;
-    width: 30px;
-}
-
-#lang:hover,
-#logo:hover {
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 10%;
-    cursor: pointer;
-}
-
-#lang:hover {
-    border: 1px solid rgba(43, 145, 182, 0);
-}
-
-#logo:hover {
-    border: 1px solid rgba(232, 232, 232, 0);
-}
-
-@media (max-width: 767px) {
-    #navlink {
-        width: auto;
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    #lang,
-    #logo {
-        display: flex;
-        justify-content: center;
-        height: 30px;
-        width: 30px;
-
-    }
-}
-
-
-#scroll-up-button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    color: #7ff7f7c6;
-    display: none;
-    position: fixed;
-    cursor: pointer;
-    bottom: 20px;
-    border: none;
-    background-color: #15151500;
-    right: 20px;
-    z-index: 99;
-    width: 70px;
-    height: 70px;
-    line-height: 40px;
-    font-size: 50px;
-    text-align: center;
-}
-
-#scroll-up-button::before {
-    content: "▲";
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#scroll-up-button:hover {
-    color: #ffffff;
-    cursor: pointer;
-}
+/* ----- SCROLL TO TOP BUTTON  ----- */
 
 @media (max-width: 576px) {
     #scroll-up-button {
@@ -178,67 +106,5 @@ body {
 
     #scroll-up-button::before {
         font-size: 50px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navlink {
-        display: flex;
-    }
-
-    #lang {
-        display: flex;
-    }
-
-    .navbar {
-        padding: 20px 10px;
-
-    }
-
-    #logo {
-        margin-bottom: 20px;
-    }
-
-    .change .bar1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #fff;
-        padding-top: 80px;
-        transition: all 0.5s ease-out;
-        transform: translateX(-100%);
-    }
-
-    .nav-links.open {
-        transform: translateX(0);
-    }
-
-    .nav-links a {
-        display: block;
-        margin: 20px 0;
-        font-size: 20px;
-        text-align: center;
     }
 }

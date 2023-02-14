@@ -101,6 +101,7 @@ function MyContact({ r1 }) {
           </form>
         )}
       </div>
+      <br />
       <h5 className="copyright">
         © 2023. Personal portfolio. Developed by Marek Angelštok. All right reserved.
       </h5>
