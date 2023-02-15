@@ -51,7 +51,7 @@ function MyContact({ r1 }) {
       <p id="contact-txt2"> {t("CONTACT-TXT2")}</p>
       <p id="contact-txt3"> {t("CONTACT-TXT3")}</p>
 
-      <div className="contact-info">
+      <section className="contact-info">
         <p>
           <img
             id="social-icon"
@@ -84,9 +84,9 @@ function MyContact({ r1 }) {
           />
           <a id="social-link" href="https://github.com/Marek-A">GitHub</a>
         </p>
-      </div>
+      </section>
 
-      <div className="form-container">
+      <section className="form-container">
         {showForm && (
           <form ref={form} onSubmit={sendEmail}>
             <label>{t("FORM-NAME")}</label><br />
@@ -100,7 +100,7 @@ function MyContact({ r1 }) {
               bodyClassName="toastBody" />
           </form>
         )}
-      </div>
+      </section>
       <br />
       <h5 className="copyright">
         © 2023. Personal portfolio. Developed by Marek Angelštok. All right reserved.

@@ -4,6 +4,7 @@
     border: rgba(203, 15, 15, 0) solid 1px;
     text-align: center;
     padding: 30px 0;
+    font-size: 13px;
     color: rgb(240, 248, 255);
 }
 
@@ -15,7 +16,7 @@
 }
 
 .my-name {
-    font-size: 132px;
+    font-size: 122px;
     font-variant: small-caps;
     margin-bottom: 20px;
     color: aliceblue;

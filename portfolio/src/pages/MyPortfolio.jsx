@@ -20,20 +20,20 @@ function MyPortfolio({ r1 }) {
             <br />
             <br />
             <h3>{t("TITLE-PORTFOLIO")}</h3>
-            <div className="portfolio-grid">
-                <div className="portfolio-item">
+            <section className="portfolio-grid">
+                <section className="portfolio-item">
                     <img onClick={handleClick} src={website1} alt="Website 1 Thumbnail" />
-                </div>
-                <div className="portfolio-item">
+                </section>
+                <section className="portfolio-item">
                     <img src={website2} alt="Website 2 Thumbnail" />
-                </div>
-                <div className="portfolio-item">
+                </section>
+                <section className="portfolio-item">
                     <img src={website3} alt="Website 3 Thumbnail" />
-                </div>
-                <div className="portfolio-item">
+                </section>
+                <section className="portfolio-item">
                     <img src={website4} alt="Website 4 Thumbnail" />
-                </div>
-            </div>
+                </section>
+            </section>
         </div>
     )
 }

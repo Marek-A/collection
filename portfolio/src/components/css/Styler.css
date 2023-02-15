@@ -15,8 +15,16 @@ body {
     background-repeat: no-repeat;
 }
 
+.myabout {
+    height: 200vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 .myhomepage,
-.myabout,
 .myportfolio,
 .mycontact {
     height: 100vh;
@@ -64,9 +72,7 @@ body {
 /* ----- PAGES----- */
 @media (max-width: 767px) {
 
-    .myhomepage,
-    .myabout,
-    .mycontact {
+    .myhomepage {
         height: 100vh;
         margin-left: 5%;
         margin-right: 5%;
@@ -74,14 +80,14 @@ body {
         margin-bottom: 50px;
     }
 
-    .mycontact {
-        height: 100vh;
+    .myabout {
+        height: 200vh;
+        height: auto;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 30%;
+        margin-top: 50px;
         margin-bottom: 50px;
     }
-
 
     .myportfolio {
         height: auto;
@@ -90,13 +96,64 @@ body {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
+    .mycontact {
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+
 }
 
+@media (max-width: 967px) {
+
+    .myhomepage {
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .myabout {
+        height: 200vh;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .myportfolio {
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .mycontact {
+        height: 100vh;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
+
+}
 
 /* ----- SCROLL TO TOP BUTTON  ----- */
 
 @media (max-width: 576px) {
-    #scroll-up-button {
+    #scroll-to-top-button {
         bottom: 3%;
         right: 50%;
         width: 36px;
@@ -104,7 +161,7 @@ body {
         line-height: 30px;
     }
 
-    #scroll-up-button::before {
+    #scroll-to-top-button::before {
         font-size: 50px;
     }
 }

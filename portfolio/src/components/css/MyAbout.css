@@ -1,5 +1,4 @@
 /* About */
-
 .myabout {
     font-family: 'Roboto', sans-serif;
     padding: 30px 0;
@@ -38,41 +37,95 @@
     font-size: 40px;
 }
 
-@media (max-width: 767px) {
-    .about-section {
-        flex-direction: column;
-    }
+/* SKILLS */
+.skills-container {
+    text-align: center;
 
-    .about-section img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-text {
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .about-text h4 {
-        font-size: 30px;
-    }
+    margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 767px) and (min-width: 1324px) {
+.skills-container ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .about-text {
-        width: 20vw;
-        height: 20vh;
-        width: 30%;
+.skills-container li {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
+.skills-container li:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+
+    .myhomepage,
+    .myabout,
+    .myportfolio,
+    .mycontact {
+        height: 100vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 
     .myabout {
-        font-size: 10px;
-        margin: auto;
+        height: 210vh;
+    }
+
+    .myportfolio {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .myabout {
+        height: 280vh;
+    }
+
+    .myportfolio {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .myabout {
+        height: 280vh;
+    }
+
+    .myportfolio {
+        height: 170vh;
+    }
+}
+
+/* ----- SCROLL TO TOP BUTTON ----- */
+
+@media (max-width: 576px) {
+    #scroll-to-top-button {
+        bottom: 3%;
+        right: 50%;
+        width: 36px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #scroll-to-top-button::before {
+        font-size: 50px;
     }
 }

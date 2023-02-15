@@ -1,3 +1,13 @@
+/* ----- STICKY TOP ----- */
+
+.navigationbar,
+.hamburger-navigationbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 /* ----- NAVIGATION BAR ----- */
 .navigationbar {
     background-color: #00000036;
@@ -63,6 +73,38 @@
     border: 1px solid rgba(232, 232, 232, 0);
 }
 
+/* media query for tablet */
+@media only screen and (max-width: 768px) {
+    .navigationbar-content-container {
+        flex-direction: column;
+    }
+
+    .navigationbar-buttons {
+        width: 100%;
+    }
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 576px) {
+    .navigationbar {
+        padding: 5px;
+    }
+
+    .navigationbar-buttons {
+        font-size: medium;
+    }
+
+    .navigationbar-logo {
+        height: 8px;
+        width: 8px;
+    }
+
+    .navigationbar-language-button {
+        height: 20px;
+        width: 20px;
+    }
+}
+
 /* ----- HAMBURGER ----- */
 #toggle-icon {
     background-color: #368292;
@@ -82,7 +124,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 99;
     padding: 10px;
     box-shadow: 0px 20px 100px rgba(31, 122, 132, 0.59);
     background-color: rgba(0, 0, 0, 0);
@@ -142,4 +184,39 @@
     font-weight: 900;
     color: #71b4d0;
     cursor: pointer;
+}
+
+/* media query for tablet */
+@media only screen and (max-width: 768px) {
+    .hamburger-navigationbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hamburger-navigationbar .nav-link {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .hamburger-navigationbar .navbar-nav:last-child {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hamburger-navigationbar .navigationbar-language-button {
+        margin-left: 0;
+    }
+}
+
+/* media query for mobile */
+@media only screen and (max-width: 576px) {
+    .hamburger-navigationbar .navbar-nav .nav-link {
+        padding: 5px;
+        font-size: medium;
+    }
+
+    .hamburger-navigationbar .navigationbar-language-button {
+        height: 20px;
+        width: 20px;
+    }
 }
