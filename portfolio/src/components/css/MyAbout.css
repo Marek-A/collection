@@ -23,6 +23,16 @@
     object-fit: cover;
 }
 
+#about-title {
+    display: flex;
+    justify-content: center;
+    color: rgb(42, 165, 165);
+    margin: 0;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
 .about-text {
     color: rgba(240, 248, 255, 0.837);
     text-align: left;
@@ -37,24 +47,46 @@
     font-size: 40px;
 }
 
-/* SKILLS */
-.skills-container {
-    text-align: center;
-
-    margin-bottom: 50px;
-}
-
-.skills-container ul {
-    list-style: none;
+/* BUTTONS */
+#cv-resume-btn-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.skills-container li {
-    margin: 5px;
+#cv-resume-button {
     padding: 10px;
-    background-color: #f1f1f1;
+    margin: 1px;
+    width: 50%;
+    font-variant: small-caps;
+    font-size: large;
+}
+
+/* SKILLS */
+.skills-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 0;
+    text-align: center;
+    padding: 30px 0;
+    color: aliceblue;
+}
+
+#skill-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#tech-exp-title {
+    color: rgb(42, 165, 165);
+    margin: 0;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 50px;
+}
+
+.skills-container li {
+    margin: 10px;
+    padding: 20px;
+    background-color: #363636;
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
@@ -64,11 +96,59 @@
 }
 
 .skills-container li:hover {
-    background-color: #333;
+    background-color: #d4d4d4;
     color: #fff;
     transform: scale(1.1);
 }
 
+.item {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+}
+
+li:nth-child(1) .item {
+    background-image: url('../../assets/img/techlogos/html.png');
+}
+
+li:nth-child(2) .item {
+    background-image: url('../../assets/img/techlogos/css.png');
+}
+
+li:nth-child(3) .item {
+    background-image: url('../../assets/img/techlogos/js.png');
+}
+
+li:nth-child(4) .item {
+    background-image: url('../../assets/img/techlogos/react.png');
+}
+
+li:nth-child(5) .item {
+    background-image: url('../../../build/logo.png');
+}
+
+li:nth-child(6) .item {
+    background-image: url('../../assets/img/techlogos/bootstrap.png');
+}
+
+li:nth-child(7) .item {
+    background-image: url('../../assets/img/techlogos/next-js.svg');
+}
+
+li:nth-child(8) .item {
+    background-image: url('../../assets/img/techlogos/node.png');
+}
+
+li:nth-child(9) .item {
+    background-image: url('../../../build/logo.png');
+}
+
+li:nth-child(10) .item {
+    background-image: url('../../../build/logo.png');
+}
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */

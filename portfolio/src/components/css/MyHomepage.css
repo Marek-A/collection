@@ -17,9 +17,11 @@
 
 .my-name {
     font-size: 122px;
+    font-weight: 600;
+    letter-spacing: 5px;
     font-variant: small-caps;
     margin-bottom: 20px;
-    color: aliceblue;
+    -webkit-text-fill-color: rgb(42, 165, 165);
 }
 
 .welcome-message {
@@ -28,6 +30,7 @@
     margin-bottom: 20px;
     color: aliceblue;
 }
+
 
 .introduction {
     font-size: 18px;

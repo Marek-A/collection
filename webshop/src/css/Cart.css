@@ -1,0 +1,133 @@
+.cart-page-main-container {
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.523), rgba(79, 93, 70, 0.436));
+
+}
+
+@media only screen and (max-width: 600px) {
+    .cart-page-main-container {
+        flex-direction: column;
+    }
+}
+
+.cart-top-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 3vh 5vw 0;
+}
+
+.cart-card-container {
+    background-image: linear-gradient(to bottom, rgba(13, 148, 155, 0.516), rgba(14, 130, 141, 0.462));
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(246, 246, 246);
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    width: 200px;
+    height: 5%;
+    padding: 5.5px 5px;
+    text-align: center;
+}
+
+.price {
+    width: 200px;
+    height: 5%;
+    padding: 5.5px 5px;
+    text-align: center;
+    color: rgb(254, 255, 253);
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+/* --------------------------------------------------------- */
+.cart-box-buttons-container {
+    width: 80px;
+    height: 38px;
+    padding: 2.5px 1px;
+    text-align: left;
+    letter-spacing: normal;
+    color: aliceblue;
+}
+
+.cart-button {
+    width: 30px;
+    height: 30px;
+
+}
+
+.cart-button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.cart-button:active {
+    padding: 1px;
+}
+
+/* --------------------------------------------------------- */
+.cart-page-bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    padding: 3vh;
+    flex-direction: row;
+}
+
+.cart-checkout {
+    display: block;
+    align-items: ce;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+.cart-parcel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar {
+    width: 260px;
+    text-align: center;
+}
+
+.searchresult {
+    width: 260px;
+    text-align: center;
+}
+
+.cart-additional-info {
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+
+}
+
+.cart-parcel-menu {
+    background-color: rgb(255, 255, 255);
+}
+
+.cart-checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}

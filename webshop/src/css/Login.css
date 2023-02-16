@@ -1,0 +1,47 @@
+#login-container {
+    margin-top: 10vh;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    display: grid;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.882), rgba(0, 0, 0, 0.652));
+
+}
+
+#log-lab {
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    color: rgb(248, 248, 251);
+    margin: 1px;
+    padding: 1px;
+
+}
+
+#message-warning {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(187, 78, 45, 0);
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+#login-button {
+    background-color: rgb(45, 187, 140);
+    color: black;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#login-button:hover {
+    cursor: pointer;
+    transform: translateY(-0.6px);
+    text-shadow: 2px 2px 20px #ffffff7d;
+}

@@ -1,0 +1,98 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  background-image: url(/public/forestbg4.jpg);
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  background-size: cover;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.blurry-image {
+  filter: blur(5px);
+}
+
+.swiss {
+  width: 50px;
+  height: 50px;
+  animation: rotation 25s infinite linear;
+}
+
+.swiss:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* ------------------------------------- */
+
+.navbar-z {
+  font-weight: 600;
+}
+
+.navbar-x {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-x:hover {
+  cursor: pointer;
+  color: rgb(223, 61, 16);
+  opacity: 0.8;
+}
+
+.navbar-x:active {
+  cursor: pointer;
+}
+
+.admin-drop {
+  color: rgb(0, 0, 0);
+}
+
+/* ------------------------------------- */
+
+.lang {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.lang:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.lang:active {
+  padding: 1px;
+}
+
+/* ------------------------------------- */
+
+.kustuta {
+  width: 30px;
+  height: 30px;
+}
+
+.kustuta:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.kustuta:active {
+  padding: 1px;
+}

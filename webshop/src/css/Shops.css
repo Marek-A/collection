@@ -1,0 +1,65 @@
+.shops-body-container {
+    margin: 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.114), rgba(0, 0, 0, 0.19));
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.map {
+    width: 50vw;
+    height: 50vh;
+    border: 10px solid rgb(60, 59, 59);
+}
+
+.map-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.map-buttons {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(45, 187, 140);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.map-buttons:hover {
+    background-color: rgb(45, 187, 140);
+    cursor: pointer;
+    transform: translateY(-0.6px);
+    text-shadow: 2px 2px 20px #ffffff7d;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .map {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    .map-buttons {
+        width: 80%;
+    }
+}
+
+.map-text-container {
+    display: flex;
+    justify-content: center;
+    font-size: 1vmax;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+}

@@ -1,0 +1,48 @@
+.contact-container {
+    margin: 5vmax;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.882), rgba(0, 0, 0, 0.652));
+
+}
+
+.text-container {
+    font-size: 1vmax;
+    color: rgb(255, 255, 255);
+    padding: 100px;
+}
+
+.form-container {
+    font-size: 1vmax;
+    padding: 5vmax;
+    width: 70vh;
+    height: 70vh;
+    color: rgb(255, 255, 255);
+
+}
+
+#sendbutton {
+    background-color: rgb(45, 187, 140);
+    color: black;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#sendbutton:hover {
+    cursor: pointer;
+    transform: translateY(-0.6px);
+    text-shadow: 2px 2px 20px #ffffff7d;
+}
+
+
+#input,
+#input-message {
+    background-color: rgba(99, 99, 99, 0.349);
+    color: aliceblue;
+    width: 20vw;
+}
+
+#input-message {
+    height: 30vh;
+}
