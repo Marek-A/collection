@@ -17,18 +17,18 @@
 
 .my-name {
     font-size: 122px;
-    font-weight: 600;
     letter-spacing: 5px;
+    font-family: 'Poppins';
     font-variant: small-caps;
     margin-bottom: 20px;
-    -webkit-text-fill-color: rgb(42, 165, 165);
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 .welcome-message {
     font-size: 32px;
     font-variant: small-caps;
     margin-bottom: 20px;
-    color: aliceblue;
+    -webkit-text-fill-color: rgb(42, 165, 165);
 }
 
 

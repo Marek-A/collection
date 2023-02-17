@@ -10,9 +10,8 @@
 
 /* ----- NAVIGATION BAR ----- */
 .navigationbar {
-    background-color: #00000036;
+    background-color: #0000002a;
     padding: 10px;
-    box-shadow: 0px 20px 100px rgba(56, 56, 56, 0.59);
     position: fixed;
     top: 0;
     left: 0;

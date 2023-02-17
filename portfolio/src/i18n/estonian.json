@@ -1,17 +1,19 @@
 {
   "translation": {
-    "HOME": "// AVALEHT",
-    "ABOUT": "// MINUST",
-    "PORTFOLIO": "// PORTFOOLIO",
-    "CONTACT": "// KONTAKT",
+    "HOME": "AVALEHT",
+    "ABOUT": "MINUST",
+    "PORTFOLIO": "PORTFOOLIO",
+    "CONTACT": "KONTAKT",
 
     "TITLE-WORK": "front-end tarkvara & veebiarendaja",
     "TITLE-ABOUT": "MINUST",
-    "TITLE-PORTFOLIO": "KÄESOLEVAD PROJEKTID",
+    "TITLE-PORTFOLIO": "projektid ja tööd",
     "TITLE-CONTACT": "VÕTA ÜHENDUST",
 
     "ABOUT-LOWER-TITLE": "Mina ja koodimine",
     "ABOUT-TEXT": "''Hei, mina olen Marek! Ma olen juunior front-end arendaja, kes avastas endas hiljuti suure kire koodimise vastu ja asus iseseisvalt õppima. Arendan oma oskusi igapäevaselt, kuna soovin rajada oma karjääri erialale kus saan demostreerida enda oskusi, kogemusi ja luua unistused teoks.  Mul on tugev alus HTML-is, CSS-is, JavaScriptis ja Reactis, kuid peamiseks aluseks on suur motivatsioon ennast igapäevaselt arendada ja paremaks saada. Proovin alati pakkuda kvaliteetset ja meeldivat kasutajakogemust, nii koodimisel kui ka igapäevases elus.''",
+    "ABOUT-EXPERT": "tehnilised oskused",
+    "ABOUT-DESIGN": "disaini oskused",
 
     "CONTACT-TXT1": "Saadaval freelance projektideks või täisajaga tööle.",
     "CONTACT-TXT2": "Kas teil on põnev pakkumine või projekt, millele vajate abi?",
@@ -21,7 +23,5 @@
     "FORM-MESSAGE": "SÕNUM",
     "FORM-SEND": "SAADA",
     "SEND-SUCCESS": "TÄNAN!"
-
-
   }
 }

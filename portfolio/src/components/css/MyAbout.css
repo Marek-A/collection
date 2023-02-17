@@ -1,4 +1,22 @@
 /* About */
+/* .spline-container {
+    position: absolute;
+    left: 5%;
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#spline {
+    background-color: #ffffff00;
+    left: 100%;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+} */
+
 .myabout {
     font-family: 'Roboto', sans-serif;
     padding: 30px 0;
@@ -67,7 +85,7 @@
     padding: 30px 0;
     text-align: center;
     padding: 30px 0;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 #skill-icon-container {
@@ -84,6 +102,7 @@
 }
 
 .skills-container li {
+    list-style: none;
     margin: 10px;
     padding: 20px;
     background-color: #363636;
@@ -93,15 +112,18 @@
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    position: relative;
 }
 
 .skills-container li:hover {
-    background-color: #d4d4d4;
-    color: #fff;
-    transform: scale(1.1);
+    background-color: #d4d4d4c8;
+    transform: scale(2.1);
+    margin-right: 5%;
 }
 
-.item {
+
+.item,
+.designitem {
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
@@ -110,47 +132,6 @@
     font-size: 0;
 }
 
-li:nth-child(1) .item {
-    background-image: url('../../assets/img/techlogos/html.png');
-}
-
-li:nth-child(2) .item {
-    background-image: url('../../assets/img/techlogos/css.png');
-}
-
-li:nth-child(3) .item {
-    background-image: url('../../assets/img/techlogos/js.png');
-}
-
-li:nth-child(4) .item {
-    background-image: url('../../assets/img/techlogos/react.png');
-}
-
-li:nth-child(5) .item {
-    background-image: url('../../../build/logo.png');
-}
-
-li:nth-child(6) .item {
-    background-image: url('../../assets/img/techlogos/bootstrap.png');
-}
-
-li:nth-child(7) .item {
-    background-image: url('../../assets/img/techlogos/next-js.svg');
-}
-
-li:nth-child(8) .item {
-    background-image: url('../../assets/img/techlogos/node.png');
-}
-
-li:nth-child(9) .item {
-    background-image: url('../../../build/logo.png');
-}
-
-li:nth-child(10) .item {
-    background-image: url('../../../build/logo.png');
-}
-
-/* MEDIA QUERIES */
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
 
@@ -208,4 +189,67 @@ li:nth-child(10) .item {
     #scroll-to-top-button::before {
         font-size: 50px;
     }
+}
+
+
+li:nth-child(1) .item {
+    background-image: url('../../assets/img/techlogos/html.png');
+}
+
+li:nth-child(2) .item {
+    background-image: url('../../assets/img/techlogos/css.png');
+}
+
+li:nth-child(3) .item {
+    background-image: url('../../assets/img/techlogos/js.png');
+}
+
+li:nth-child(4) .item {
+    background-image: url('../../assets/img/techlogos/react.png');
+}
+
+li:nth-child(5) .item {
+    background-image: url('../../assets/img/techlogos/vue.png');
+}
+
+li:nth-child(6) .item {
+    background-image: url('../../assets/img/techlogos/bootstrap.png');
+}
+
+li:nth-child(7) .item {
+    background-image: url('../../assets/img/techlogos/next-js.svg');
+}
+
+li:nth-child(8) .item {
+    background-image: url('../../assets/img/techlogos/node.png');
+}
+
+li:nth-child(9) .item {
+    background-image: url('../../assets/img/techlogos/firebase.png');
+}
+
+li:nth-child(10) .item {
+    background-image: url('../../assets/img/techlogos/postman.png');
+}
+
+/* ------------------------------------- */
+
+li:nth-child(1) .designitem {
+    background-image: url('../../assets/img/techlogos/figma.png');
+}
+
+li:nth-child(2) .designitem {
+    background-image: url('../../assets/img/techlogos/xd.png');
+}
+
+li:nth-child(3) .designitem {
+    background-image: url('../../assets/img/techlogos/photoshop.png');
+}
+
+li:nth-child(4) .designitem {
+    background-image: url('../../assets/img/techlogos/light.png');
+}
+
+li:nth-child(5) .designitem {
+    background-image: url('../../assets/img/techlogos/spline.png');
 }

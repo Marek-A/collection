@@ -85,8 +85,7 @@ function MyContact({ r1 }) {
           <a id="social-link" href="https://github.com/Marek-A">GitHub</a>
         </p>
       </section>
-
-      <section className="form-container">
+         <section className="form-container">
         {showForm && (
           <form ref={form} onSubmit={sendEmail}>
             <label>{t("FORM-NAME")}</label><br />

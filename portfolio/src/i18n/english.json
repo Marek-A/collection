@@ -1,17 +1,19 @@
 {
   "translation": {
-    "HOME": "// HOMEPAGE",
-    "ABOUT": "// ABOUT",
-    "PORTFOLIO": "// PORTFOLIO",
-    "CONTACT": "// CONTACT",
+    "HOME": "HOMEPAGE",
+    "ABOUT": "ABOUT",
+    "PORTFOLIO": "PORTFOLIO",
+    "CONTACT": "CONTACT",
 
-    "TITLE-WORK": "front-end software engineer",
+    "TITLE-WORK": "front-end web & software developer",
     "TITLE-ABOUT": "ABOUT ME",
-    "TITLE-PORTFOLIO": "CURRENT PROJECTS",
+    "TITLE-PORTFOLIO": "Projects x Works",
     "TITLE-CONTACT": "CONTACT",
 
     "ABOUT-LOWER-TITLE": "My Journey with coding",
     "ABOUT-TEXT": "''Hi, my name is Marek! I'm a aspiring frontend developer who found a great passion for coding and started learning on my own. I develop my skills on a daily basis because I want to build my career in a field where I can demonstrate my skills, experiences, and make my dreams come true. I have a strong foundation in HTML, CSS, JavaScript, and React, but my main foundation is a strong motivation to continually improve myself every day. I always try to provide a quality and pleasant user experience, both in coding and in daily life.''",
+    "ABOUT-EXPERT": "technical skills",
+    "ABOUT-DESIGN": "design skills",
 
     "CONTACT-TXT1": "Available for freelance or full-time job opportunities.",
     "CONTACT-TXT2": "Have an exciting offer or a project you need help with?",

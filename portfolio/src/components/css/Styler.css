@@ -16,23 +16,43 @@ body {
 }
 
 .myabout {
-    height: 200vh;
+    height: 130vh;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0);
+
 }
 
-.myhomepage,
-.myportfolio,
+.myportfolio {
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
 .mycontact {
     height: 100vh;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0);
+    background-image: url("/src/assets/img/hello.png");
+    background-position-x: 50vw;
+    background-position-y: 50vh;
+    background-repeat: no-repeat;
+}
+
+
+.myhomepage {
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 /* ----- SCROLL TO TOP BUTTON ----- */
@@ -130,7 +150,7 @@ body {
     }
 
     .myportfolio {
-        height: auto;
+        height: 100vh;
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 50px;

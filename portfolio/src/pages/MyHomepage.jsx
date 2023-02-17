@@ -16,9 +16,6 @@ function MyHomepage({ r1 }) {
             <p className="welcome-message">
                 {t("TITLE-WORK")}
             </p>
-            <p className="introduction">
-
-            </p>
             <Spline scene="x" />
         </div>
     )
