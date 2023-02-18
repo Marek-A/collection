@@ -9,16 +9,13 @@ import { useRef, useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 function MyContact({ r1 }) {
-
   const { t } = useTranslation();
-
   const [showForm, setShowForm] = useState(true);
   const form = useRef();
 
   const notify = () => toast.success(t("SEND-SUCCESS"), {
     position: toast.POSITION.BOTTOM_CENTER
   });
-
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -46,7 +43,6 @@ function MyContact({ r1 }) {
     <div ref={r1} className="mycontact">
       <br />
       <br />
-      {/* <h3>{t("TITLE-CONTACT")}</h3> */}
       <p id="contact-txt1"> {t("CONTACT-TXT1")}<br /></p>
       <p id="contact-txt2"> {t("CONTACT-TXT2")}</p>
       <p id="contact-txt3"> {t("CONTACT-TXT3")}</p>
@@ -85,7 +81,7 @@ function MyContact({ r1 }) {
           <a id="social-link" href="https://github.com/Marek-A">GitHub</a>
         </p>
       </section>
-         <section className="form-container">
+      <section className="form-container">
         {showForm && (
           <form ref={form} onSubmit={sendEmail}>
             <label>{t("FORM-NAME")}</label><br />
@@ -102,10 +98,11 @@ function MyContact({ r1 }) {
       </section>
       <br />
       <h5 className="copyright">
-        © 2023. Personal portfolio. Developed by Marek Angelštok. All right reserved.
+        {/* © 2023. Personal portfolio. Developed by Marek Angelštok. All right reserved. */}
       </h5>
     </div>
   )
 }
 
 export default MyContact
+

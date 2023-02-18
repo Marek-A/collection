@@ -1,9 +1,12 @@
-/* MyPortfolio.css */
-
 .myportfolio {
     margin: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #portfolio-title {
@@ -30,4 +33,14 @@
 
 .project-card-text {
     font-size: 20px;
+}
+
+@media (max-width: 919px) {
+    .portfolio-grid {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: contents;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }

@@ -1,7 +1,6 @@
 import "../components/css/MyAbout.css"
 import "../components/css/Styler.css"
 import Button from "react-bootstrap/Button";
-// import Spline from '@splinetool/react-spline';
 import { useTranslation } from "react-i18next";
 
 function MyAbout({ r1 }) {
@@ -13,7 +12,6 @@ function MyAbout({ r1 }) {
 
       <section className="about-section">
         <div className="about-text">
-          {/* <div className="spline-container"> <Spline id="spline" scene="https://prod.spline.design/wVa8RmJlI5MgmPzP/scene.splinecode" /></div> */}
           <h4 id="about-title">{t("ABOUT-LOWER-TITLE")}</h4>
           <p>{t("ABOUT-TEXT")}</p>
           <br />
@@ -23,9 +21,7 @@ function MyAbout({ r1 }) {
           </div>
         </div>
       </section >
-
       <br />
-
       <section className="skills-container">
         <p id="tech-exp-title">{t("ABOUT-EXPERT")}</p>
         <ul id="skill-icon-container">
@@ -39,10 +35,8 @@ function MyAbout({ r1 }) {
           <li><div class="item" title="Node.js"></div></li>
           <li><div class="item" title="Firebase"></div></li>
           <li><div class="item" title="Postman"></div></li>
-
         </ul>
       </section>
-
       <section className="skills-container">
         <p id="tech-exp-title">{t("ABOUT-DESIGN")}</p>
         <ul id="skill-icon-container">
@@ -51,10 +45,8 @@ function MyAbout({ r1 }) {
           <li><div class="designitem" title="Photoshop"></div></li>
           <li><div class="designitem" title="Lightroom"></div></li>
           <li><div class="designitem" title="Spline 3D"></div></li>
-
         </ul>
       </section>
-
     </div >
   )
 }
