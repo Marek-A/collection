@@ -1,5 +1,5 @@
 .myabout {
-    height: 130vh;
+    height: 120svh;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 100px;
@@ -124,45 +124,68 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 1200px) {
-
-    .myhomepage,
-    .myabout,
-    .myportfolio,
-    .mycontact {
-        height: 100vh;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-
+/* Media query for screens with a maximum width of 991px */
+@media (max-width: 991px) {
     .myabout {
-        height: 210vh;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
-    .myportfolio {
-        height: 60vh;
+    #about-title {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 20px;
+        width: 80%;
+    }
+
+    #cv-resume-button {
+        width: 80%;
+    }
+
+    .skills-container li,
+    #skill-icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-container li {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 768px) {
+/* Media query for screens with a maximum width of 767px */
+@media (max-width: 767px) {
     .myabout {
-        height: 280vh;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-    .myportfolio {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 320px) {
-    .myabout {
-        height: 280vh;
+    #about-title {
+        font-size: 30px;
     }
 
-    .myportfolio {
-        height: 170vh;
+    .about-text {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    #cv-resume-button {
+        width: 90%;
+    }
+
+    .skills-container li,
+    #skill-icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-container li {
+
+        font-size: 12px;
     }
 }
 

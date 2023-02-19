@@ -9,10 +9,7 @@ body {
 
 .body-container {
     background-color: #151515;
-    /* background-image: url("/src/assets/img/hello.png"); */
-    background-position-x: 5vw;
-    background-position-y: 50vh;
-    background-repeat: no-repeat;
+
 }
 
 

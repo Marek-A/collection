@@ -2,11 +2,11 @@
     margin: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    height: 80vh;
+    height: 100svh;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 #portfolio-title {
@@ -22,9 +22,15 @@
 .portfolio-grid {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
+}
+
+#box {
+    margin: 1px;
+    width: 25rem;
+    height: 27em;
 }
 
 .project-card-title {
@@ -35,12 +41,58 @@
     font-size: 20px;
 }
 
-@media (max-width: 919px) {
-    .portfolio-grid {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        display: contents;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+@media (max-width: 991px) {
+    .myportfolio {
+        margin-left: 2%;
+        margin-right: 2%;
     }
+
+    #portfolio-title {
+        font-size: 50px;
+    }
+
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #box {
+        margin: 15%;
+        width: 100%;
+        height: 100px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .myportfolio {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #portfolio-title {
+        font-size: 50px;
+    }
+
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #box {
+        margin: 15%;
+        width: 100%;
+        height: 100px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
 }

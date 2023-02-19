@@ -49,6 +49,10 @@ function App() {
       document.documentElement.scrollTop > 20
     ) {
       scrollbutton.style.display = "block";
+      scrollbutton.onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.snrollTop = 0;
+      };
     } else {
       scrollbutton.style.display = "none";
     }

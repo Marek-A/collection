@@ -22,7 +22,8 @@ function MyPortfolio({ r1 }) {
             <br /><br />
             <h3 id='portfolio-title'>{t("TITLE-PORTFOLIO")}</h3>
             <section className="portfolio-grid">
-                <Card bg="dark" border="muted" text="light" style={{ width: '25rem', height: '27rem' }}>
+
+                <Card id="box" bg="dark" border="muted" text="light" >
                     <Card.Img variant="top" onClick={handleClick} src={website1} alt="Website 1 Thumbnail" />
                     <Card.Body>
                         <Card.Title className="project-card-title">Mily Gear</Card.Title>
@@ -33,7 +34,7 @@ function MyPortfolio({ r1 }) {
                     </Card.Body>
                 </Card>
 
-                <Card bg="dark" border="muted" text="light" style={{ width: '25rem', height: '27rem' }}>
+                <Card id="box" bg="dark" border="muted" text="light" >
                     <Card.Img variant="top" onClick={handleClick} src={website2} alt="Website 1 Thumbnail" />
                     <Card.Body>
                         <Card.Title className="project-card-title">Bakery Shop</Card.Title>
@@ -44,7 +45,7 @@ function MyPortfolio({ r1 }) {
                     </Card.Body>
                 </Card>
 
-                <Card bg="dark" border="muted" text="light" style={{ width: '25rem', height: '27rem' }}>
+                <Card id="box" bg="dark" border="muted" text="light" >
                     <Card.Img variant="top" onClick={handleClick} src={website3} alt="Website 1 Thumbnail" />
                     <Card.Body>
                         <Card.Title className="project-card-title">(Upcoming) Personal trainer website</Card.Title>
@@ -57,7 +58,7 @@ function MyPortfolio({ r1 }) {
                     </Card.Body>
                 </Card>
 
-                <Card bg="dark" border="muted" text="light" style={{ width: '25rem', height: '27rem' }}>
+                <Card id="box" bg="dark" border="muted" text="light" >
                     <Card.Img variant="top" onClick={handleClick} src={website4} alt="Website 1 Thumbnail" />
                     <Card.Body>
 
