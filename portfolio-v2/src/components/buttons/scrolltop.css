@@ -1,0 +1,19 @@
+.scroll-icon-top {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: 2.8rem;
+    transition: .5s ease;
+}
+
+.scroll-icon-top a:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.scroll-icon-top a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
