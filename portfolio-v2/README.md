@@ -16,4 +16,4 @@ The Contact component of this React app uses the emailjs library to handle sendi
 ## Navbar Component
 The Navbar component of this React app is a responsive navbar with smooth scrolling functionality. It allows users to navigate to different sections of the website using links in the navbar and highlights the currently active section as the user scrolls through the page.
 
-# Thank you for visiting my portfolio repository!
+## Thank you for visiting my portfolio repository!
