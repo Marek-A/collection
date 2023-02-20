@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import ScrollTop from "./components/buttons/ScrollTop";
+// import ScrollTop from "./components/buttons/ScrollTop";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <About />
       <Portfolio />
       <Contact />
-      <ScrollTop sectionId="home" />
+      {/* <ScrollTop sectionId="home" /> */}
     </div>
   );
 }

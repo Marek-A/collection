@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import "./styles/home.css";
 import "./styles/mediaqueries.css";
+
 import ScrollReveal from "scrollreveal";
 import Typed from 'typed.js';
+import Spline from '@splinetool/react-spline';
 
 export default function Home() {
     const typedRef = React.useRef(null);
@@ -99,7 +101,7 @@ export default function Home() {
                 </a>
             </div>
             <div className="home-img">
-                <img src={require('../assets/images/logo2.png')} alt="" />
+                <Spline scene="https://prod.spline.design/05fSpuF9Fvx-3azd/scene.splinecode" />
             </div>
         </section>
     );

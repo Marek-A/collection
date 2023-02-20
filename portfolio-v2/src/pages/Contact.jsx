@@ -5,11 +5,9 @@ import './styles/mediaqueries.css'
 import emailjs from '@emailjs/browser';
 
 import { useRef, useState } from 'react';
-import { useTranslation } from "react-i18next";
 
 
 function Contact() {
-  const { t } = useTranslation();
   const [showForm, setShowForm] = useState(true);
   const form = useRef();
 
@@ -46,34 +44,34 @@ function Contact() {
   return (
     <section className="contact" id="contact">
       <h2 className="heading">Contact <span>me</span> via social links or message me from below!</h2>
-<div className='contact-social-container'>
-      <div className="contact-social-media">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/marek-angelstok/"
-        >
-          <i class="bx bxl-linkedin-square"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/Marek-A"
-        >
-          <i class="bx bxl-github"></i>
-        </a>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.facebook.com/m.angelstok"
-        >
-          <i class="bx bxl-facebook-circle"></i>
-        </a>
-        <button id='contact-mail' onClick={handleClick}>
-          <i class="bx bxs-message-rounded-dots"></i>
-        </button>
+      <div className='contact-social-container'>
+        <div className="contact-social-media">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/marek-angelstok/"
+          >
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Marek-A"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/m.angelstok"
+          >
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <button id='contact-mail' onClick={handleClick}>
+            <i class="bx bxs-message-rounded-dots"></i>
+          </button>
+        </div>
       </div>
-</div>
       <section className="form-container">
         {showForm && (
           <form ref={form} onSubmit={sendEmail}>
@@ -84,7 +82,7 @@ function Contact() {
             <div className="input-box">
               <textarea type="text" name="message" rows="10" placeholder='Your message' />
             </div>
-            <button class="btn" onClick={() => { sendEmail(); }}>{t("FORM-SEND")}</button>
+            <button class="btn" onClick={() => { sendEmail(); }}>Send!</button>
           </form>
         )}
       </section>
