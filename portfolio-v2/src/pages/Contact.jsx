@@ -43,7 +43,7 @@ function Contact() {
 
   return (
     <section className="contact" id="contact">
-      <h2 className="heading">Contact <span>me</span> via social links or message me from below!</h2>
+      <h2 className="heading" id="heading-cont">Contact <span>me</span> via social links or message me from below!</h2>
       <div className='contact-social-container'>
         <div className="contact-social-media">
           <a

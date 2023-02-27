@@ -22,8 +22,12 @@
 }
 
 .portfolio-box img {
-    width: 100%;
-    transition: .5s ease;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .portfolio-box:hover img {
@@ -61,7 +65,7 @@
 }
 
 .portfolio-layer a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 5rem;

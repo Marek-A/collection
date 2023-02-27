@@ -1,17 +1,22 @@
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .home-img img {
-        width: 15vw;
+        width: 13vw;
+        margin-left: 10rem;
 
     }
 
     .about-img img {
-        width: 35vw;
+        width: 20vw;
 
     }
+
 }
 
 
@@ -78,7 +83,7 @@
     }
 
     .home-img img {
-        width: 40vw;
+        display: none;
         margin-top: 3rem;
     }
 
@@ -87,8 +92,9 @@
     }
 
     .about img {
-        width: 40vw;
-        margin-top: 4rem;
+        width: 30vw;
+        display: flex;
+        justify-content: center;
     }
 
     .portfolio h2 {
@@ -106,7 +112,7 @@
     }
 
     .home-img img {
-        width: 50vw;
+        display: none;
     }
 
     .about-img img {
@@ -126,13 +132,19 @@
 }
 
 @media (max-width: 365px) {
-
     .home-img img {
-        width: 80vw;
+        display: none;
     }
 
     .about-img img {
-        width: 80vw;
+        width: 30rem;
+    }
+
+    .about-content h1,
+    .heading {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
     }
 
     .footer {
@@ -143,4 +155,24 @@
         text-align: center;
         margin-top: 2rem;
     }
+
+    .contact-social-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-social-media a,
+    #contact-mail {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        font-size: 2rem;
+
+    }
+
 }

@@ -1,19 +1,28 @@
 .scroll-icon-top {
-    display: inline-flex;
-    justify-content: center;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
     background: var(--main-color);
     border-radius: 2.8rem;
     transition: .5s ease;
+    box-shadow: 0 0 1rem transparent;
 }
 
-.scroll-icon-top a:hover {
-    background-color: var(--main-color);
-    box-shadow: 0 0 1rem var(--main-color);
+.scroll-icon-top:hover {
+    background-color: var(--main-color-darker);
+    box-shadow: 0 0 1rem rgb(255, 149, 0);
+    ;
 }
 
 .scroll-icon-top a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+.scroll-icon-top:hover a i {
+    color: white;
 }

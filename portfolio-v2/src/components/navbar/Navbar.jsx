@@ -24,6 +24,7 @@ export default function Navbar() {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      toggleMenu();
     }
   };
 
@@ -54,7 +55,7 @@ export default function Navbar() {
   return (
     <header className='header'>
       <a href='/' as={Link} to='/' className='logo'>
-        My portfolio
+        angelstok.ee
       </a>
       <i
         className={`bx ${menuIcon ? 'bx-x' : 'bx-menu'}`}

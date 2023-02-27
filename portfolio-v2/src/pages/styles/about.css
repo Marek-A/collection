@@ -7,7 +7,9 @@
 }
 
 .about-img img {
-    width: 20vw;
+    width: 15vw;
+    position: relative;
+    left: 30%;
 }
 
 .heading {
@@ -18,17 +20,32 @@
 .about-content h2 {
     text-align: left;
     line-height: 1.2;
-
-}
-
-.about-content h3 {
-    font-size: 2.6rem;
-
+    font-size: 3rem;
+    margin: 0;
+    padding: 0rem 0rem 2rem;
 }
 
 .about-content p {
     text-align: left;
-    font-size: 2.3rem;
-    margin: 2rem 0 3rem;
+    font-size: 2.2rem;
+    margin: 1rem 0 3rem;
+}
 
+.about-content {
+    max-width: 80rem;
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .about .about-img {
+        flex: 1 0 100%;
+        order: 1;
+    }
+
+    .about .about-content {
+        flex: 1 0 100%;
+        order: 2;
+    }
 }

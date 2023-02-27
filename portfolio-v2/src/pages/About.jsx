@@ -1,37 +1,38 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './styles/about.css'
 import './styles/mediaqueries.css'
 
+
 function About() {
 
-    const handleLinkClick = (event, sectionId) => {
-        event.preventDefault();
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+
 
     return (
         <section className="about" id="about">
-
             <div className="about-content">
-                <h2 className="heading">My Journey with<span> coding</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>Hi, my name is Marek! I'm a aspiring frontend developer who found a great passion for coding and started learning on my own.
-                    <br /> Every day, I strive to enhance my abilities as I aspire to establish a fulfilling career in a domain where I can effectively showcase my expertise, leverage my experiences, and manifest my aspirations into reality.
-                    <br /> I have a strong foundation in HTML, CSS, JavaScript, and React, but my main foundation is a strong motivation to continually improve myself every day.
-                    <br />
-                    <br />
-                    I always try to provide a quality and pleasant user experience, both in coding and in daily life.
-                </p>
-                <Link class="btn" href='portfolio' as={Link} to='/portfolio' onClick={(event) => handleLinkClick(event, 'portfolio')}>
-                    Curious about my projects?
-                </Link>
-            </div>
-            <div className="about-img">
-                <img src={require('../assets/images/profile.png')} alt="" />
+
+                <h2 className="heading">Introducing Myself : <span>A Brief Overview </span></h2>
+                <div className="skills">
+                    <p>At the end of 2022, I began establishing my online presence to showcase my self-taught skills in web development and design.</p>
+                    <p>I am proficient in HTML, CSS, and JavaScript, with daily expanding experience in building web applications using <span>React, Redux, Next.js, Bootstrap.</span></p>
+                    <p>I have familiarity with server-side web development using <span>Node.js</span> and <span>Firebase</span>, with an understanding of REST APIs and HTTP requests using <span>Postman.</span></p>
+                    <p>I am also great in using <span>GitHub</span> for version control and documentation.</p>
+                    <p>I have a solid foundation in web design tools such as <span>Figma</span>, <span>Adobe Xd</span>, <span>Lightroom</span> and <span>Photoshop</span>.</p>
+                </div>
+                <div className="about-img">
+                    <img src={require('../assets/images/profile.png')} alt="" />
+                </div>
+                {/* <div className="myself">
+                    <p> I am a person of many interests and hobbies.
+                        When I'm not busy coding or gaming, you can often find me enjoying the great outdoors.
+                        Whether it's practicing archery, hiking, camping, or kayaking,
+                        I love spending time in nature and enjoying the beauty of our world.</p>
+                    <p> Last but not least, I cannot forget to mention my furry companion,
+                        a beautiful white golden retriever.
+                        Together, we explore the great outdoors, enjoying the fresh air and each other's company.
+                        He's is my loyal companion and my best friend.</p>
+                </div> */}
+
             </div>
         </section >
     )

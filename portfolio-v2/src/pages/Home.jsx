@@ -4,17 +4,17 @@ import "./styles/mediaqueries.css";
 
 import ScrollReveal from "scrollreveal";
 import Typed from 'typed.js';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 export default function Home() {
     const typedRef = React.useRef(null);
 
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
-            strings: ['Frontend Developer', 'UI designer', 'Proud owner of a golden retriever', ''],
-            typeSpeed: 125,
-            backSpeed: 150,
-            backDelay: 1500,
+            strings: ['Junior Frontend Developer!', 'Proud owner of a golden retriever!'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1000,
             loop: true,
         });
         return () => {
@@ -24,15 +24,15 @@ export default function Home() {
 
     useEffect(() => {
         ScrollReveal({
-            reset: true,
-            distance: "80px",
+            reset: false,
+            distance: "10%",
             duration: 2000,
-            delay: 200,
+            delay: 100,
         });
 
         ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
         ScrollReveal().reveal(
-            ".home-img, .portfolio-box, .contact form",
+            ".home-img",
             { origin: "bottom" }
         );
         ScrollReveal().reveal(".home-content h1, .about-img", {
@@ -61,10 +61,9 @@ export default function Home() {
                 </h3>
 
                 <p>
-                    I'm a aspiring frontend developer with great passion for coding.{" "}
+                    I'm a aspiring junior frontend developer with great passion for coding.{" "}
                     <br />
-                    I always try to provide a quality work and pleasant user
-                    experience, both in coding and in daily life.
+                    Transforming my creativity and knowledge into beautiful functional websites.
                 </p>
                 <div className="social-media">
                     <a
@@ -101,7 +100,7 @@ export default function Home() {
                 </a>
             </div>
             <div className="home-img">
-                <Spline scene="https://prod.spline.design/05fSpuF9Fvx-3azd/scene.splinecode" />
+                <img src={require('../assets/images/static-logo.png')} alt="" />
             </div>
         </section>
     );
