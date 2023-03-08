@@ -74,7 +74,13 @@ function AddProduct() {
 
 
         DbProducts.push(newProduct);
-        fetch(config.productsDbUrl1, { "method": "PUT", "body": JSON.stringify(DbProducts) }) // lisamiseks 
+        fetch(config.productsDbUrl1,
+            {
+                "method": "PUT",
+                "body": JSON.stringify
+                    (DbProducts)
+                
+            }) // lisamiseks 
             .then(() => {
                 toast.success("Toode lisatud!", { "position": "top-right", "theme": "dark" });
                 idRef.current.value = "";

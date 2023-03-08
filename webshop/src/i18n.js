@@ -10,15 +10,13 @@ const resources = {
   tr: turkish,
 };
 
-i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
-  .init({
-    resources,
-    lng: localStorage.getItem("language") || "eng",
+i18n.use(initReactI18next).init({
+  resources,
+  lng: localStorage.getItem("language") || "eng",
 
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

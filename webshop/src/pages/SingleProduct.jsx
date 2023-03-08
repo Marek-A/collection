@@ -1,4 +1,3 @@
-import "../css/Homepage.css";
 import config from "../data/config.json";
 import { useParams } from "react-router"
 import { useState, useEffect } from "react";

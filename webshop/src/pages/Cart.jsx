@@ -1,9 +1,8 @@
-// import styles from "../css/Cart.module.css";
-import "../css/Cart.css";
 import { useEffect, useContext, useState, useRef } from "react";
-import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 import Payment from "../components/cart/Payment";
 import CartSumContext from "../store/CartSumContext";
@@ -12,13 +11,10 @@ function Cart() {
   const { t } = useTranslation();
   const [parcelMachines, setParcelMachines] = useState([]);
   const [DbparcelMachines, setDbParcelMachines] = useState([]); //search function
-  //------------------------------------------------------- cartSumCtx below
   const cartSumCtx = useContext(CartSumContext);
-  // localStorages saan toodete hinda muuta 
-  // lahendus võtame kõik tooted fetch abil ja võtame hinnad ka sealt, võttes localstoragest id'd 
-  //-------------------------------------------------------
   const [isLoading, setLoading] = useState(true);
   const searchedRef = useRef();
+
   const searchFromParcelMachines = () => {
     const result = DbparcelMachines.filter(element =>
       element.NAME.toLowerCase().includes(searchedRef.current.value.toLowerCase())
@@ -27,7 +23,7 @@ function Cart() {
     setParcelMachines(result);
   }
 
-  useEffect(() => { //useEffect kui tulen lehele ja kohe toimub API päring
+  useEffect(() => {
     fetch('https://www.omniva.ee/locations.json')
       .then(res => res.json())
       .then(json => {
@@ -38,13 +34,13 @@ function Cart() {
   }, []);
 
   const [cart, updateCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
-  //------------------------------------------------------- cartSumCtx below
+
   const emptyCart = () => {
     updateCart([]);
     localStorage.setItem("cart", JSON.stringify([]));
     cartSumCtx.setCartSum(0);
   }
-  //-------------------------------------------------------
+
   const deleteProduct = (i) => {
     cart.splice(i, 1);
     updateCart(cart.slice());
@@ -77,13 +73,6 @@ function Cart() {
     return cartsum.toFixed(2);
   }
 
-
-
-
-
-
-
-
   //---------LOADER BEFORE RETURN--------------
   if (isLoading === true) {
     return (<Spinner animation="grow" variant="dark" />
@@ -112,6 +101,7 @@ function Cart() {
 
           )}
           <div className="cart-page-bottom-container">
+
             <div className="cart-checkout">
 
               <div className="cart-parcel-container">
@@ -124,6 +114,7 @@ function Cart() {
                     .map(element => <option key={element.NAME}>{element.NAME}</option>)}
                 </select>
               </div>
+
               <div className="cart-checkout-container">
                 <div>{t("Cart price:")} {calculateCartPrice()} $ </div>
                 <div> {cart.length > 0 && <div>{cart.length} {t("unique products")}</div>}
@@ -145,7 +136,4 @@ function Cart() {
   )
 }
 
-// 150 + RIDA HAKKAME MÕTLEMA VÄLJATÕSTIMISE PEALE
-// 200 RIDA TÕSTMAE VÄLJA
-// ET OLEKS ILUSAM JA VÄHEM KEERULISEM
 export default Cart

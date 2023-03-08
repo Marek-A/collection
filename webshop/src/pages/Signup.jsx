@@ -1,8 +1,8 @@
-
 import { useContext } from "react";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../store/AuthContext";
+
 function Signup() {
     const emailRef = useRef();
     const passwordRef = useRef();

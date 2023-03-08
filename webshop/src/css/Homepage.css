@@ -6,8 +6,8 @@
     font-size: large;
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0);
-    width: 100vw;
-    height: 30vh;
+    width: 100%;
+    max-height: 30vh;
     text-shadow: 5px 5px 20px #ffffff;
 }
 

@@ -1,4 +1,3 @@
-import '../css/Shops.css'
 import { useEffect, useState } from 'react';
 import Map from '../components/Map';
 import config from "../data/config.json";

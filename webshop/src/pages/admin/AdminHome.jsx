@@ -9,8 +9,6 @@ export default function AdminHome() {
   return (
     <div>
 
-
-
       <Link to="/admin/add-product">
         <Button variant="success">{t("Add product")}</Button>
       </Link>
@@ -26,7 +24,6 @@ export default function AdminHome() {
       <Link to="/admin/maintain-shops">
         <Button variant="info">{t("Maintain shops")}</Button>
       </Link>
-
 
     </div>
   )

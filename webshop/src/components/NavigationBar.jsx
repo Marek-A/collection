@@ -1,28 +1,25 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
-import { useTranslation } from "react-i18next";
-import { useContext } from "react";
 import CartSumContext from "../store/CartSumContext";
-
-import { useNavigate } from "react-router-dom";
-
 import AuthContext from "../store/AuthContext";
 
 function NavigationBar() {
     const authCtx = useContext(AuthContext);
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
+
     const changeLang = (newLang) => {
         i18n.changeLanguage(newLang);
         localStorage.setItem("language", newLang);
     };
-    //-------------------------------------------------------
-    const cartSumCtx = useContext(CartSumContext);
-    //-------------------------------------------------------
 
+    const cartSumCtx = useContext(CartSumContext);
 
     // const login = () => {
     //     setLogged: setIsLoggedIn
@@ -34,7 +31,6 @@ function NavigationBar() {
         sessionStorage.removeItem("token");
         navigate("/");
     }
-
 
     return (
 

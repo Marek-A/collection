@@ -1,13 +1,10 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+
 import config from "../../data/config.json";
 
-
-
 function EditProduct() {
-
   const [DbProducts, setDbProducts] = useState([]); // peab olema kõige üleval muidu error
-
   const { productId } = useParams();
   const [idUnique, setIdUnique] = useState(true);
   const productFound = DbProducts.find(element => element.id === Number(productId));
